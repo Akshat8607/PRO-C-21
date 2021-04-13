@@ -24,11 +24,11 @@ function draw(){
   if(wall.x-bullet.x<(wall.width+bullet.width)/2){
     bullet.velocityX=0;
     var damage=0.5*speed*weight*speed/thickness*thickness*thickness;
-    if(damage>5){
+    if(damage>3){
       wall.shapeColor=color("red");
   }
   
-  if(damage<5){
+  if(damage<3){
     wall.shapeColor=color("green");
   }
 }
